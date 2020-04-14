@@ -1,2 +1,2 @@
 # ContactCourse
-I follow algorithm from CLRS book i Written all codes in Cpp language
+I follow algorithms from CLRS book the codes written in Cpp language
