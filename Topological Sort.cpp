@@ -61,7 +61,7 @@ int main()
             curr_s=temp;
         }
     }
-    
+   //pick a node from the list of vertices have indegree as 0
     while(s->next!=NULL){
         int vertex=s->next->data;
         struct node *temp=new struct node();
@@ -70,6 +70,7 @@ int main()
         curr_l->next=temp;
         curr_l=temp;
         struct node *ptr=head[vertex]->next;
+    //remove the vertex from graph by reducing the degree of adjacent vertices by 1 
         while(ptr!=NULL){
             inDegree[ptr->data]--;
             if(inDegree[ptr->data]==0){
